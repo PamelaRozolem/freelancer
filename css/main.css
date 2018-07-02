@@ -1,3 +1,332 @@
+.global{
+    margin: 0px 30px 0 30px;
+    margin-top: 0;
+}
 /*
- * Estilos de tu proyecto
+* Utils
+*/
+body{
+    margin: 0;
+    font-size: 16px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.family-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+/*
+ * Menu 
  */
+.menu{
+    height: 70px;
+    margin:0;
+    background-color: #2c3e50;
+    color: white;
+    line-height: inherit;
+    white-space: nowrap;
+    position:relative;
+}
+.menu header h1{
+    font-weight:700; 
+    float: left;
+    margin-left: 144.4px;
+}
+
+.menu ul{
+    margin: 10px 25px 0px 0px;
+    padding: 0;
+}
+.menu ul li {
+    
+    display: inline-block;
+   
+}
+
+.menu header nav {
+    float: right;
+    margin-right: 80px;
+}
+.menu ul li a{
+    padding: 10px;
+    font-size: 1em;
+  display: block;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; 
+  text-decoration: none;
+  justify-content: space-around;
+}
+.menu ul li a:hover {
+   background-color: #18bc9c;
+}
+
+
+/* 
+    banner
+*/
+.banner{
+    height: 637.2px;
+    background-color: #18bc9c;
+    display: flex;
+    width: 100%;
+    align-items:center;
+    flex-direction:column;
+    color: white;
+ }
+
+ .banner h2{
+    font-size: 4.1em;
+    margin: 30px 0 0 0;
+ }
+ .banner i{
+    margin-top: 20px;
+ }
+
+ .banner p {
+    font-size: 1.61em;
+ }
+.imgBanner{
+    height: 230px;
+    margin-top: 100px;
+}
+
+/*
+    * Portfolio 
+    * 
+*/
+  .portfolio {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: auto;
+    background-color:white;
+    color: black;
+    height: 795px;
+  }
+
+  .box-wrap{
+    flex-wrap: wrap;
+    width: 1012px;
+}
+    
+  .portfolio .box-wrap .imagem {
+    height: 235px;
+    width: 324.1px;
+    padding: 5px;
+  }
+
+  .portfolio header {
+    width: 100%;
+    text-align: center;
+    align-items:center;
+
+  }
+
+  .portfolio header h2{
+    padding-top: 81.4px;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin:10px;
+  }
+/* 
+  About
+*/
+  .about {
+    height: 415px;
+    margin:0;
+    padding: 50px;
+    background-color: #18bc9c;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+  }
+  .about header h2{
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+  }
+
+   .about header {
+    width: 100%;
+    text-align: center;
+    align-items:center;
+   }
+  
+   .about .text{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .about .text p{
+    width: 320px;
+    font-size: 1.25em;
+   }
+
+   .about .text p:nth-child(2){
+    margin-left: 10px;
+    }
+
+    .button{
+    background:  #18bc9c;
+    border: 2.5px solid white;
+    width: 186.5px;
+    color: white;
+    border-radius: 2px;
+    height: 41.4px;
+    margin-top: -0.2em;
+    font-size: 18.1px;
+    }
+    .button i{
+        margin-right: 4.9px;
+    }
+    
+    
+    .button:hover {
+        background-color:white;
+        color: black;
+     }
+     /* 
+        Contact
+     */
+     .contact {
+        height: 715px;
+        margin:0;
+        padding: 50px;
+        background-color: white;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .contact header h2{
+        font-size: 2.6em;
+        margin:10px;
+        margin-top: 1.1em;
+    }
+    
+       .contact header {
+        width: 100%;
+        text-align: center;
+        align-items:center;
+       }
+
+       form {
+        margin-right: 2.7em;
+        margin-top: 0.6em;
+        font-size: 1.4em;
+       }
+
+       form .form-input-group{
+        display: flex;
+        flex-direction: column;
+       }
+
+       form .form-input-group input{
+        width: 600px;
+        height: 30px;
+        border: none;
+        }
+
+        form .form-input-group label{
+        margin-top: 1em;
+        border-bottom: 1px solid #e9ecef;
+        color: #495057;
+        }
+      
+       .contact form .message{
+           height: 60px;
+       }
+       .buttonContact{
+        background: #18bc9c;
+        border: 1px solid;
+        width: 70px;
+        color: white;
+        margin-top: 84.8px;
+        border-radius: 5px;
+        height: 42.2px;
+        font-size: 17.3px
+        }
+        .buttonContact:hover {
+            color:white;
+         }
+         /* 
+            Footer
+         */
+        footer {
+            padding-top: 10px;
+            margin:0;
+            background-color:#2c3e50;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+          
+         footer header{
+            font-size: 1.3em;
+        }
+        footer .box:first-child{
+            margin-right: 55px;
+        }
+
+        footer .box:last-child{
+            margin-left: 55px;
+        }
+        footer .box{
+            width: 18.2em;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        footer .box p{
+            font-size:1.1em;
+        }
+        footer .box ul{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .box ul li{
+            width: 40px;
+            height: 40px;
+            background-color: #2c3e50;
+            border-radius: 50%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border: 2px solid;    
+            margin-right: 10px;
+        }
+
+        footer .box ul a{
+         color: white;
+        }
+
+        footer .box .behind a{
+           
+            color: #18bc9c;
+        }
+
+        .rodape{
+            height:50px;
+            width: 100%;
+            margin:0;
+            background-color:#2c3e50;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center ;
+            color: white;
+            padding-top: 50px;
+          }          
